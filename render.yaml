@@ -3,11 +3,13 @@ services:
     name: fraud-detection-api
     env: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn app:app"
+    startCommand: "gunicorn fraud_api:app"
     envVars:
       - key: SHOPIFY_API_KEY
-        value: cd014c001d7a15705c088a24a2d97e9a
+        value: bf520678d939baaf977cf4fbc5a00ba1
       - key: SHOPIFY_PASSWORD
-        value: Hassan@512
+        value: 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
       - key: SHOPIFY_STORE
-        value: br0d07-7a.myshopify.com
+        value: nerdused.myshopify.com
+      - key: PYTHON_VERSION
+        value: 3.10
