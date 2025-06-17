@@ -1,0 +1,4 @@
+echo "3.10.13" > .python-version
+git add .python-version
+git commit -m "Force Python 3.10.13 on Render"
+git push origin main
